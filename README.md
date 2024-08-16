@@ -7,11 +7,20 @@ Navigate to where your local kafka folder is at then in the commandline:
 ```commandline
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
+To kill a zookeeper instance:
+```commandline
+ps aux | grep zookeeper
+```
 
 ### Step 2: Initiate your kafka Broker
 Navigate to where your local kafka folder is at then in the commandline:
 ```commandline
 bin/kafka-server-start.sh config/server.properties
+```
+
+To kill a broker instance:
+```commandline
+ps aux | grep kafka
 ```
 
 ### Step 3: Start running your producer and consumer scripts
